@@ -7,6 +7,7 @@
     --sale-color: #dd7c73;
     --white-color: #ffffff;
     --background-color: #eef1f7;
+    --background-color-2:rgb(132, 184, 224);
     --products-badge-color: #00706e;
     --on-sales-text: #00706e;
     --on-sales-cross-text: #68749c;
@@ -23,7 +24,7 @@
     --text-h0: 4.5rem;
     --text-h1: 3.5rem;
     --text-h2: 2.75rem;
-    --text-h3: 2rem;
+    --text-h3: 3rem;
     --text-h4: 1.75rem;
     --text-h5: 1.375rem;
     --text-h6: 1.25rem;

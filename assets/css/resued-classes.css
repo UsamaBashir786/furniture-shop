@@ -4,3 +4,15 @@
 .pointer{
     cursor: pointer;
 }
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
