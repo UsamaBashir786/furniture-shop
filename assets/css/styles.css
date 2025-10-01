@@ -1,8 +1,10 @@
-*, :before, :after {
+*,
+:before,
+:after {
     box-sizing: border-box;
     border-style: solid;
     border-width: 0;
-    border-color: rgb(var(--text-color) / .12);
+    border-color: rgb(var(--text-color) / 0.12);
 }
 /* 
 1. Reset CSS
@@ -132,15 +134,17 @@ header div.__map_icon-div svg {
     align-items: center;
 }
 
-
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
     font-size: 10px !important;
     color: white;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
     font-weight: bolder;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
     font-weight: bolder;
 }
 /* ========================Navbar======================== */
