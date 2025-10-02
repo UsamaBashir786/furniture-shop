@@ -177,7 +177,7 @@
 }
 
 /* Small Tablets */
-@media screen and (max-width: 856px) {
+@media screwen and (max-width: 856px) {
     .__map_icon-div,
     .__refer_friend-div {
         display: none !important;
