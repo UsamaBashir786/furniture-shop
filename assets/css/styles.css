@@ -863,7 +863,7 @@ main {
 
 .__block_template_content h2 {
     font-size: 44px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-text);
     font-family: var(--font-secondary);
 }

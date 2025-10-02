@@ -12,8 +12,7 @@
   --container-max: 1320px;
 }
 
-/* Extra Large Screens */
-@media screen and (max-width: 1400px){
+@media screen and (min-width: 1400px) and (max-width: 2560px){
     .__header_wrapper,
     .__nav_wrapper {
         max-width: var(--container-max);
@@ -54,7 +53,12 @@
     } */
 }
 
-/* Large Screens */
+@media screen and (min-width:1024px ) and (max-width: 1400px){
+    .__footer_grid{
+         padding: 0 4%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .__products_wrapper {
         grid-template-columns: 1fr 1fr 1fr;
@@ -76,7 +80,6 @@
     }
 }
 
-/* Tablets */
 @media screen and (max-width: 992px) {
     nav i{
         font-size: 30px !important;
@@ -171,8 +174,10 @@
     }
 }
 
-/* Small Tablets */
 @media screen and (max-width: 856px) {
+    .__block_template_img{
+        height: auto;
+    }
     .__map_icon-div,
     .__refer_friend-div {
         display: none !important;
@@ -206,8 +211,10 @@
     }
 }
 
-/* Large Mobile */
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width:856px) {
+    .__block_template_img{
+        height: auto;
+    }
     .__chat_box {
         width: 100px;
         height: 48px;
@@ -280,7 +287,7 @@
     }
 
     .__block_template_img{
-        height: auto;
+        height: auto !important;
     }
     .__block_template_content h2{
         font-size: 5vw;
@@ -343,12 +350,16 @@
         font-size: 13px;
     }
 }
+
 @media  screen and (max-width:1024px) {
     .__footer_grid{
         padding: 0 4%;
     }
+    .__block_template_img{
+        height: auto;
+    }
 }
-/* Medium Mobile */
+
 @media screen and (max-width: 576px) {
     .__chat_box {
         width: 90px;
@@ -415,6 +426,10 @@
     .__main_wrapper_two h3 {
         font-size: calc(var(--text-h3) * 0.75);
         margin: 24px 0;
+    }
+
+    .__block_template_img{
+        height: auto;
     }
     
     nav {
@@ -493,6 +508,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    .__block_template_img{
+        height: auto;
+    }
     .faq-title {
         font-size: 28px;
         margin-bottom: 30px;
@@ -522,6 +540,9 @@
 }
 
 @media screen and (max-width: 415px) {
+    .__block_template_img{
+        height: auto;
+    }
     .__chat_box {
         width: 80px;
         height: 42px;
@@ -640,6 +661,9 @@
 }
 
 @media screen and (max-width: 375px) {
+    .__block_template_img{
+        height: auto;
+    }
     .__banner_wrapper {
         height: 40vh !important;
         margin-bottom: 20px;
@@ -697,6 +721,9 @@
 }
 
 @media screen and (max-width: 320px) {
+    .__block_template_img{
+        height: auto;
+    }
     nav {
         height: 70px;
     }
