@@ -4,29 +4,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bedroom Furniture - Foundations & Bases | Casper</title>
-
         <!-- ==========================For Seo Tags========================== -->
         <meta name="description" content="Project practice for front end development using HTML5, CSS3, JS and Semantic Tags." />
         <meta name="keywords" content="HTML5, CSS3, Sematic Tags, Web Development, Responsive Design, Front End Web Development" />
         <meta name="author" content="__Any_who__EDIT" />
-
         <!-- ==========================Favicon========================== -->
         <link rel="icon" href="assets/img/fav.png" type="image/x-icon" />
-
         <!-- ==========================Css Files========================== -->
         <link rel="stylesheet" href="assets/css/variables.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/mega-dropdown.css" />
+        <link rel="stylesheet" href="assets/css/box-bar.css" />
         <link rel="stylesheet" href="assets/css/media-queries.css" />
         <link rel="stylesheet" href="assets/css/resued-classes.css" />
         <link rel="stylesheet" href="assets/css/chat-box.css" />
-
+        <link rel="stylesheet" href="assets/css/color-product-changer.css" />
         <!-- ==========================Remix Icons========================== -->
         <link rel="stylesheet" href="assets/RemixIcon/fonts/remixicon.css" />
-
         <!-- ==========================Link Swiper's CSS========================== -->
-
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
         <!-- ==========================AOS Animations========================== -->
         <link rel="stylesheet" href="assets/node_modules/aos/dist/aos.css" />
     </head>
@@ -78,7 +74,7 @@
                     <div class="__nav_icons_small_screen">
                         <ul class="__mobile_small_sreen___left--side">
                             <li>
-                                <a href="#">
+                                <a id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu">
                                     <i class="ri-menu-line"></i>
                                 </a>
                             </li>
@@ -86,8 +82,8 @@
                             &nbsp;&nbsp;
                             <!-- </li> -->
                             <li>
-                                <a  class="__d-sm-block">
-                                    <i class="ri-map-pin-line" ></i>
+                                <a class="__d-sm-block">
+                                    <i class="ri-map-pin-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -97,32 +93,446 @@
                     </div>
                     <div class="__nav_items">
                         <ul>
-                            <li>
+                            <!-- Mattresses Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Mattresses</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Foams</h4>
+                                        <div class="mega-item">
+                                            <a href="#">The One</a>
+                                            <p>Comforting foam with medium-firm support.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Cloud One ⭐</a>
+                                            <p>NEW Featuring patent-pending Casper Core+™ for deeper sleep.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Hybrids</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Dream</a>
+                                            <p>Hybrid support & unique responsive feel.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Snow</a>
+                                            <p>Cooling & conforming hybrid feel.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Maxes</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Dream Max</a>
+                                            <p>Max support where your body needs it most.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Snow Max</a>
+                                            <p>Cooling & conforming feel with max support.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all mattresses</a></div>
+                                        <div class="mega-item"><a href="#">Shop cooling mattresses</a></div>
+                                        <div class="mega-item"><a href="#">Take the quiz</a></div>
+                                        <div class="mega-item"><a href="#">Compare mattresses</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/mattresses.png" alt="Cloud One" />
+                                        <h3>Cloud One just floated in.</h3>
+                                        <p>Our softest all-foam mattress ever.</p>
+                                        <a href="#" class="btn">Shop Cloud One</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Bundles Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Bundles</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Popular Bundles</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Sleep Bundle</a>
+                                            <p>Mattress + pillows at a special price.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Complete Bedroom</a>
+                                            <p>Everything you need for better sleep.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Mattress Bundles</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Mattress + Frame</a>
+                                            <p>Perfect pairing for your bedroom.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Mattress + Foundation</a>
+                                            <p>Complete support system.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Bedding Bundles</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Sheet Set Bundle</a>
+                                            <p>Premium sheets in your favorite colors.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Duvet Bundle</a>
+                                            <p>Cozy comfort for all seasons.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all bundles</a></div>
+                                        <div class="mega-item"><a href="#">Build your bundle</a></div>
+                                        <div class="mega-item"><a href="#">Save up to 25%</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/bundles.png" alt="Bundle Offer" />
+                                        <h3>Save more with bundles</h3>
+                                        <p>Get everything you need at a better price.</p>
+                                        <a href="#" class="btn">Shop Bundles</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Pillows Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Pillows</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>By Type</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Original Pillow</a>
+                                            <p>Perfectly balanced support & softness.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Down Pillow</a>
+                                            <p>Luxuriously soft and fluffy.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Foam Pillow</a>
+                                            <p>Supportive memory foam feel.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>By Preference</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Cooling Pillows</a>
+                                            <p>Stay cool all night long.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Body Pillows</a>
+                                            <p>Full-body support and comfort.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Travel Pillows</a>
+                                            <p>Comfort on the go.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Pillow Accessories</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Pillowcases</a>
+                                            <p>Soft, breathable fabrics.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Pillow Protectors</a>
+                                            <p>Keep pillows fresh and clean.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all pillows</a></div>
+                                        <div class="mega-item"><a href="#">Pillow quiz</a></div>
+                                        <div class="mega-item"><a href="#">Compare pillows</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/pillows.png" alt="Pillows" />
+                                        <h3>Find your perfect pillow</h3>
+                                        <p>Every sleep position deserves the right support.</p>
+                                        <a href="#" class="btn">Take the Quiz</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Furniture Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#" class="active">Furniture</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Bed Frames</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Platform Frames</a>
+                                            <p>Modern and minimalist design.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Metal Frames</a>
+                                            <p>Sturdy and affordable support.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Wood Frames</a>
+                                            <p>Classic elegance and durability.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Adjustables</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Adjustable Base</a>
+                                            <p>Customize your comfort position.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Split King Base</a>
+                                            <p>Individual adjustments for couples.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>More Furniture</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Headboards</a>
+                                            <p>Complete your bedroom style.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Foundations</a>
+                                            <p>Essential mattress support.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Nightstands</a>
+                                            <p>Bedside storage and style.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all furniture</a></div>
+                                        <div class="mega-item"><a href="#">Frame finder</a></div>
+                                        <div class="mega-item"><a href="#">Compare frames</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/furniture.png" alt="Furniture" />
+                                        <h3>Build your dream bedroom</h3>
+                                        <p>Quality furniture that complements your style.</p>
+                                        <a href="#" class="btn">Shop Furniture</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Bedding Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Bedding</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Sheets</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Percale Sheets</a>
+                                            <p>Crisp, cool, and breathable.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Sateen Sheets</a>
+                                            <p>Silky smooth and luxurious.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Linen Sheets</a>
+                                            <p>Natural and temperature-regulating.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Comforters & Duvets</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Down Comforter</a>
+                                            <p>Lightweight warmth.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">All-Season Duvet</a>
+                                            <p>Perfect for year-round comfort.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Duvet Covers</a>
+                                            <p>Protect and style your duvet.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Blankets</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Weighted Blanket</a>
+                                            <p>Calming, comforting pressure.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Throw Blankets</a>
+                                            <p>Cozy layers of warmth.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all bedding</a></div>
+                                        <div class="mega-item"><a href="#">Bedding sets</a></div>
+                                        <div class="mega-item"><a href="#">Shop by color</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/bedding.png" alt="Bedding" />
+                                        <h3>Premium bedding essentials</h3>
+                                        <p>Transform your bed into a luxury retreat.</p>
+                                        <a href="#" class="btn">Shop Bedding</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Accessories Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Accessories</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Mattress Protection</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Mattress Protectors</a>
+                                            <p>Waterproof and breathable.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Mattress Toppers</a>
+                                            <p>Add extra comfort and support.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Sleep Essentials</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Sleep Masks</a>
+                                            <p>Block out light for better sleep.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">White Noise Machines</a>
+                                            <p>Soothing sounds for restful nights.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Aromatherapy</a>
+                                            <p>Calming scents for relaxation.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Bedroom Extras</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Bed Risers</a>
+                                            <p>Create extra storage space.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Reading Lights</a>
+                                            <p>Perfect bedtime lighting.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Shop all accessories</a></div>
+                                        <div class="mega-item"><a href="#">Gift ideas</a></div>
+                                        <div class="mega-item"><a href="#">Sleep guides</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/accessories.png" alt="Accessories" />
+                                        <h3>Complete your sleep setup</h3>
+                                        <p>Essential accessories for better rest.</p>
+                                        <a href="#" class="btn">Shop Accessories</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+
+                            <!-- Explore Mega Menu -->
+                            <li class="has-mega">
                                 <a href="#">Explore</a>
+                                <div class="mega-dropdown">
+                                    <div>
+                                        <h4>Learn</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Sleep Guide</a>
+                                            <p>Tips for better sleep quality.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Mattress Buying Guide</a>
+                                            <p>Find your perfect match.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Blog</a>
+                                            <p>Sleep tips and lifestyle advice.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>About Us</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Our Story</a>
+                                            <p>How we're changing sleep.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Sustainability</a>
+                                            <p>Our commitment to the planet.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Reviews</a>
+                                            <p>What customers are saying.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>Support</h4>
+                                        <div class="mega-item">
+                                            <a href="#">Contact Us</a>
+                                            <p>We're here to help.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">FAQ</a>
+                                            <p>Common questions answered.</p>
+                                        </div>
+                                        <div class="mega-item">
+                                            <a href="#">Returns & Warranty</a>
+                                            <p>Risk-free trial information.</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <div class="mega-item"><a href="#">Find a Store</a></div>
+                                        <div class="mega-item"><a href="#">Track Order</a></div>
+                                        <div class="mega-item"><a href="#">Corporate Sales</a></div>
+                                    </div>
+
+                                    <div class="mega-banner">
+                                        <img src="assets/img/megaDrop/explore.png" alt="Explore" />
+                                        <h3>Discover better sleep</h3>
+                                        <p>Expert advice and resources for your journey.</p>
+                                        <a href="#" class="btn">Learn More</a>
+                                    </div>
+                                </div>
                             </li>
+
+                            <!-- Sale (No Mega Menu) -->
                             <li class="__Sale-li">
                                 <a href="#" class="__Sale">Sale</a>
                             </li>
                         </ul>
                     </div>
+
                     <div class="__nav_icons">
                         <ul>
                             <li>
@@ -233,6 +643,96 @@
             </ul>
         </div>
 
+        <!-- ==================MOBILE MENU OVERLAY================== -->
+        <div id="mobiMenu" class="mm" aria-hidden="true">
+        <div class="mm__scrim" data-close></div>
+
+        <div class="mm__sheet" role="dialog" aria-modal="true">
+            <button class="mm__close" type="button" aria-label="Close" data-close>
+            <i class="ri-close-line"></i>
+            </button>
+
+            <section class="mm__panel mm__panel--root active" id="mm-root">
+            <ul class="mm__list">
+                <li>
+                <button class="mm__row" data-sub="mattresses">
+                    <span class="mm__left">Mattresses</span>
+                    <span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span>
+                </button>
+                </li>
+                <li><button class="mm__row" data-sub="bundles"><span class="mm__left">Bundles</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><button class="mm__row" data-sub="pillows"><span class="mm__left">Pillows</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><button class="mm__row" data-sub="furniture"><span class="mm__left">Furniture</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><button class="mm__row" data-sub="bedding"><span class="mm__left">Bedding</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><button class="mm__row" data-sub="accessories"><span class="mm__left">Accessories</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><button class="mm__row" data-sub="explore"><span class="mm__left">Explore</span><span class="mm__chev"><i class="ri-arrow-right-s-line"></i></span></button></li>
+                <li><a class="mm__row mm__row--sale" href="#"><span class="mm__left">Sale</span></a></li>
+            </ul>
+
+            <div class="mm__footer">
+                <a href="#"><i class="ri-gift-line"></i> Refer a friend</a>
+                <a href="#"><i class="ri-map-pin-line"></i> Find a store</a>
+                <a href="#"><i class="ri-user-3-line"></i> Account</a>
+            </div>
+            </section>
+
+            <section class="mm__panel mm__panel--sub" id="mm-sub" aria-labelledby="mm-sub-title" hidden>
+            <header class="mm__subHead">
+                <button class="mm__back" type="button" data-back>
+                <i class="ri-arrow-left-s-line"></i> <span id="mm-sub-title">Mattresses</span>
+                </button>
+            </header>
+            <div class="mm__subBody" id="mmSubBody"></div>
+            </section>
+
+            <template id="tpl-mattresses">
+            <div class="ms">
+                <h4 class="ms__title">Shop all mattresses</h4>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">The One</a>
+                <p class="ms__desc">Comforting foam with medium-firm support.</p>
+                </div>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">Cloud One ⭐</a>
+                <p class="ms__desc">NEW Featuring patent-pending Casper Core+™ for deeper sleep.</p>
+                </div>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">Dream</a>
+                <p class="ms__desc">Hybrid support & unique responsive feel.</p>
+                </div>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">Snow</a>
+                <p class="ms__desc">Cooling & conforming hybrid feel.</p>
+                </div>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">Dream Max</a>
+                <p class="ms__desc">Max support where your body needs it most.</p>
+                </div>
+
+                <div class="ms__item">
+                <a class="ms__link" href="#">Snow Max</a>
+                <p class="ms__desc">Cooling & conforming feel with max support.</p>
+                </div>
+
+                <a class="ms__link ms__strong" href="#">Shop cooling mattresses</a>
+            </div>
+            </template>
+
+            <template id="tpl-bundles"><div class="ms"><h4 class="ms__title">Bundles</h4><a class="ms__link" href="#">All bundles</a></div></template>
+            <template id="tpl-pillows"><div class="ms"><h4 class="ms__title">Pillows</h4><a class="ms__link" href="#">All pillows</a></div></template>
+            <template id="tpl-furniture"><div class="ms"><h4 class="ms__title">Furniture</h4><a class="ms__link" href="#">Bed Frames</a><a class="ms__link" href="#">Headboards</a><a class="ms__link" href="#">Foundation</a></div></template>
+            <template id="tpl-bedding"><div class="ms"><h4 class="ms__title">Bedding</h4><a class="ms__link" href="#">Sheets</a><a class="ms__link" href="#">Duvets</a></div></template>
+            <template id="tpl-accessories"><div class="ms"><h4 class="ms__title">Accessories</h4><a class="ms__link" href="#">Protectors</a><a class="ms__link" href="#">Toppers</a></div></template>
+            <template id="tpl-explore"><div class="ms"><h4 class="ms__title">Explore</h4><a class="ms__link" href="#">Sleep quiz</a><a class="ms__link" href="#">Compare</a></div></template>
+
+        </div>
+        </div>
+
         <!-- ================Main Content================ -->
         <main>
             <!-- =====================Main Banner===================== -->
@@ -243,6 +743,7 @@
                     <h3>Support your mattress in style.</h3>
                 </div>
             </div>
+            
             <!-- =====================Adjustables===================== -->
             <div class="__main_wrapper_two">
                 <div class="__section_heading">
@@ -470,6 +971,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- =====================Attachable Headboards===================== -->
             <div class="__main_wrapper_two">
                 <div class="__section_heading">
@@ -494,7 +996,6 @@
                         <div class="__product_color_selection_one d-flex">
                             <div class="__color_option_one"></div>
                             <div class="__color_option_two"></div>
-                            <div class="__color_option_three"></div>
                         </div>
                     </div>
                     <div class="__product_card __product_two_target" data-aos="zoom-in" data-aos-duration="800">
@@ -925,5 +1426,7 @@
         <script src="assets/js/searchSidebar.js"></script>
         <script src="assets/js/scrolled-class.js"></script>
         <script src="assets/js/megaDropdown.js"></script>
+        <script src="assets/js/box-menu.js"></script>
+        <script src="assets/js/color-product-changer.js"></script>
     </body>
 </html>

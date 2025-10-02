@@ -1,26 +1,20 @@
-/* ==================CSS VARIABLES================== */
 :root {
-    /* Colors */
     --primary-color: #1e306e;
     --primary-dark: #26417f;
     --primary-text: #012169;
     --sale-color: #dd7c73;
     --white-color: #ffffff;
     --background-color: #eef1f7;
-    --background-color-2:rgb(132, 184, 224);
+    --background-color-2: rgb(132, 184, 224);
     --products-badge-color: #00706e;
     --on-sales-text: #00706e;
     --on-sales-cross-text: #68749c;
     --banner-heading-color: #d0fbe2;
-
-    /* hover colors */
     --hover-primary-color: #15264c9a;
     --hover-sale-color: #dd7c7384;
-    /* font family */
     --font-primary: "CalibreWeb", sans-serif;
     --font-secondary: "NewKansas", sans-serif;
     --font-tertiary: "SuisseIntl", sans-serif;
-    /* font sizes */
     --text-h0: 4.5rem;
     --text-h1: 3.5rem;
     --text-h2: 2.75rem;
@@ -29,5 +23,3 @@
     --text-h5: 1.375rem;
     --text-h6: 1.25rem;
 }
-
-/* ==================END CSS VARIABLES================== */

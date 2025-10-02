@@ -1,8 +1,59 @@
-/* ============================================
-   RESPONSIVE MEDIA QUERIES
-   ============================================ */
+:root {
+  --bp-xxl: 1400px;
+  --bp-xl: 1200px; 
+  --bp-lg: 992px;  
+  --bp-md: 768px;  
+  --bp-sm: 576px;  
+  --bp-xs: 480px;  
+  --bp-xxs: 375px; 
+  --bp-tiny: 320px;
+  --bp-856: 856px;
+  --bp-415: 415px;
+  --container-max: 1320px;
+}
 
-/* Large Screens (max-width: 1200px) */
+/* Extra Large Screens */
+@media screen and (min-width: 1400px) {
+    .__header_wrapper,
+    .__nav_wrapper {
+        max-width: var(--container-max);
+    }
+    
+    .__main_wrapper_two,
+    .__products_wrapper,
+    .__banner_wrapper,
+    .__block_template {
+        max-width: var(--container-max);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .__question-wrapper__grid {
+        max-width: var(--container-max);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .faq-container {
+        max-width: 900px;
+    }
+    
+    .__footer_grid {
+        max-width: var(--container-max);
+    }
+    
+    .__footer-bottom .footer-bottom-content {
+        max-width: var(--container-max);
+    }
+    
+    /* .__bottom_bar-main .bottom_bar-wrapper {
+        max-width: var(--container-max);
+        margin-left: auto;
+        margin-right: auto;
+    } */
+}
+
+/* Large Screens */
 @media screen and (max-width: 1200px) {
     .__products_wrapper {
         grid-template-columns: 1fr 1fr 1fr;
@@ -24,9 +75,8 @@
     }
 }
 
-/* Tablets (max-width: 992px) */
+/* Tablets */
 @media screen and (max-width: 992px) {
-    /* Navigation */
     nav i{
         font-size: 30px !important;
         font-weight: 100;
@@ -56,13 +106,11 @@
         height: 48px;
     }
     
-    /* Products */
     .__products_wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
     
-    /* Hero Section */
     .__main_img-div h1 {
         font-size: calc(var(--text-h1) * 0.8);
     }
@@ -71,31 +119,26 @@
         font-size: calc(var(--text-h4) * 0.9);
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         gap: 30px;
     }
     
-    /* Banner */
     .__banner_wrapper {
         height: 250px;
         margin-bottom: 30px;
     }
     
-    /* Block Template */
     .__block_template {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
     
-    /* Questions Section */
     .__question-wrapper__grid {
         grid-template-columns: 1fr;
         padding: 0;
     }
     
-    /* Footer */
     .__footer_grid {
         grid-template-columns: 1fr;
         gap: 48px;
@@ -127,7 +170,7 @@
     }
 }
 
-/* Small Tablets (max-width: 856px) */
+/* Small Tablets */
 @media screen and (max-width: 856px) {
     .__map_icon-div,
     .__refer_friend-div {
@@ -159,14 +202,21 @@
     }
 }
 
-/* Large Mobile Devices (max-width: 768px) */
+/* Large Mobile */
 @media screen and (max-width: 768px) {
-    /* Search Sidebar */
+    .__chat_box {
+        width: 100px;
+        height: 48px;
+        font-size: 14px;
+        gap: 8px;
+        right: 8px;
+        bottom: 16px;
+    }
+    
     .__search-sidebar {
         width: 100% !important;
     }
     
-    /* Products */
     .__products_wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
@@ -185,7 +235,6 @@
         gap: 8px;
     }
     
-    /* Main Content */
     .__main_wrapper_two h3 {
         font-size: calc(var(--text-h3) * 0.85);
         margin: 30px 0;
@@ -195,7 +244,6 @@
         gap: 15px;
     }
     
-    /* Navigation */
     nav {
         height: 70px;
     }
@@ -213,7 +261,6 @@
         font-size: 1.1rem;
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         height: 60px !important;
         gap: 20px;
@@ -228,14 +275,12 @@
         margin-bottom: 6px;
     }
     
-    /* Banner */
     .__banner_wrapper {
         height: 200px;
         margin-bottom: 24px;
         border-radius: 8px;
     }
     
-    /* FAQ */
     .faq-title {
         font-size: 36px;
         margin-bottom: 40px;
@@ -266,7 +311,6 @@
         height: 28px;
     }
     
-    /* Footer */
     .__footer-container {
         padding: 50px 0 32px 0;
     }
@@ -288,9 +332,17 @@
     }
 }
 
-/* Medium Mobile Devices (max-width: 576px) */
+/* Medium Mobile */
 @media screen and (max-width: 576px) {
-    /* Banner with Mobile Image */
+    .__chat_box {
+        width: 90px;
+        height: 45px;
+        font-size: 13px;
+        gap: 6px;
+        right: 8px;
+        bottom: 14px;
+    }
+    
     .__banner_wrapper {
         width: 100%;
         background-image: url("../img/banner-sm.webp");
@@ -304,7 +356,6 @@
         height: 76vw;
     }
     
-    /* Products */
     .__products_wrapper {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -329,7 +380,6 @@
         font-size: 12px;
     }
     
-    /* Hero Section */
     .__main_wrapper_one {
         height: 200px;
     }
@@ -342,7 +392,6 @@
         font-size: calc(var(--text-h4) * 0.75);
     }
     
-    /* Main Content */
     .__main_wrapper_two {
         width: 96%;
     }
@@ -352,7 +401,6 @@
         margin: 24px 0;
     }
     
-    /* Navigation */
     nav {
         height: 65px;
     }
@@ -366,7 +414,6 @@
         font-size: 1.3rem;
     }
     
-    /* Header */
     header {
         min-height: 45px;
     }
@@ -384,12 +431,10 @@
         font-size: 0.75rem;
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         gap: 16px;
     }
     
-    /* Footer */
     .__footer-container {
         padding: 40px 0 32px 0;
     }
@@ -431,7 +476,6 @@
     }
 }
 
-/* FAQ Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
     .faq-title {
         font-size: 28px;
@@ -461,12 +505,19 @@
     }
 }
 
-/* Small Mobile Devices (max-width: 415px) */
 @media screen and (max-width: 415px) {
-    /* Navigation */
+    .__chat_box {
+        width: 80px;
+        height: 42px;
+        font-size: 12px;
+        gap: 5px;
+        right: 6px;
+        bottom: 12px;
+    }
+    
     nav {
         padding: 0;
-        height: 60px;
+        height: 65px;
     }
     
     .__nav_wrapper {
@@ -486,7 +537,6 @@
         font-size: 1rem;
     }
     
-    /* Header */
     header {
         min-height: 40px;
     }
@@ -500,7 +550,6 @@
         font-size: 10px;
     }
     
-    /* Hero Section */
     .__small-screen_block {
         display: block;
     }
@@ -523,7 +572,6 @@
         font-size: calc(var(--text-h4) * 0.7);
     }
     
-    /* Products */
     .__product_card a {
         font-size: 14px;
     }
@@ -536,7 +584,6 @@
         font-size: 12px;
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         height: 55px !important;
         gap: 14px;
@@ -551,14 +598,12 @@
         margin-bottom: 4px;
     }
     
-    /* Banner */
     .__banner_wrapper {
         height: 48vh;
         margin-bottom: 20px;
         border-radius: 6px;
     }
     
-    /* Footer */
     .__footer-newsletter__heading {
         font-size: 18px;
         padding: 0 8px;
@@ -578,16 +623,13 @@
     }
 }
 
-/* Extra Small Mobile Devices (max-width: 375px) */
 @media screen and (max-width: 375px) {
-    /* Banner */
     .__banner_wrapper {
         height: 40vh !important;
         margin-bottom: 20px;
         border-radius: 6px;
     }
     
-    /* Main Content */
     .__main_wrapper_two {
         width: 98%;
     }
@@ -597,7 +639,6 @@
         margin: 20px 0;
     }
     
-    /* Products */
     .__product_img-div {
         height: 200px;
     }
@@ -609,9 +650,8 @@
         padding: 4px 8px;
     }
     
-    /* Navigation */
     nav {
-        height: 55px;
+        height: 60px;
     }
     
     .__nav_wrapper .__nav_logo {
@@ -623,12 +663,10 @@
         font-size: 1.2rem;
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         gap: 12px;
     }
     
-    /* Footer */
     .__footer-newsletter__heading {
         font-size: 16px;
     }
@@ -642,11 +680,9 @@
     }
 }
 
-/* Very Small Mobile Devices (max-width: 320px) */
 @media screen and (max-width: 320px) {
-    /* Navigation */
     nav {
-        height: 50px;
+        height: 70px;
     }
     
     .__nav_wrapper .__nav_logo {
@@ -666,7 +702,6 @@
         font-size: 1.1rem;
     }
     
-    /* Header */
     header {
         min-height: 36px;
     }
@@ -681,7 +716,6 @@
         font-weight: 500;
     }
     
-    /* Hero Section */
     .__main_wrapper_one {
         height: 160px;
     }
@@ -698,13 +732,11 @@
         font-size: calc(var(--text-h4) * 0.65);
     }
     
-    /* Main Content */
     .__main_wrapper_two h3 {
         font-size: calc(var(--text-h3) * 0.6);
         margin: 16px 0;
     }
     
-    /* Products */
     .__product_img-div {
         height: 180px;
     }
@@ -727,7 +759,6 @@
         font-size: 11px;
     }
     
-    /* Bottom Bar */
     .__bottom_bar-main .bottom_bar-wrapper {
         height: 50px !important;
         gap: 10px;
@@ -742,7 +773,6 @@
         margin-bottom: 3px;
     }
     
-    /* Banner */
     .__banner_wrapper {
         height: 120px;
         margin-bottom: 16px;
