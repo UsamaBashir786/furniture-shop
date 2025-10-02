@@ -13,7 +13,7 @@
 }
 
 /* Extra Large Screens */
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .__header_wrapper,
     .__nav_wrapper {
         max-width: var(--container-max);
@@ -40,6 +40,7 @@
     
     .__footer_grid {
         max-width: var(--container-max);
+        padding: 0 4% !important;
     }
     
     .__footer-bottom .footer-bottom-content {
@@ -273,6 +274,13 @@
     .__bottom_bar-main .bottom_bar-wrapper .__bottom_bar {
         font-size: 11px;
         margin-bottom: 6px;
+    }
+
+    .__block_template_img{
+        height: auto;
+    }
+    .__block_template_content h2{
+        font-size: 5vw;
     }
     
     .__banner_wrapper {

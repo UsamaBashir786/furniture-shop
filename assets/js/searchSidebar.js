@@ -1,6 +1,6 @@
 const searchSidebar = document.querySelector('.__search-sidebar');
 const closeBtn = document.getElementById('closeBtn');
-const searchOpenBtn = document.querySelector('[data-search-open]');
+const searchOpenBtn = document.querySelectorAll('[data-search-open]');
 
 function openSearchSidebar() {
     if (searchSidebar) {

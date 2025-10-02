@@ -1,0 +1,80 @@
+/* 
+    =============Theme Fonts===========
+*/
+@font-face {
+    font-family: "CalibreWeb";
+    src: url("../fonts/CalibreWeb-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NewKansas";
+    src: url("../fonts/NewKansas-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SuisseIntl";
+    src: url("../fonts/SuisseIntl-Book.otf") format("opentype");
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'NewKansas';
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.__empty-div{
+    width: 350px;
+    min-height: 300px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.__empty_link{
+    font-size: var(--text-h6);
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+
+.__empty_link:after{
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 0%;
+    content: '';
+    display: block;
+    transition: 0.5s ease-in;
+    color: var(--hover-primary-color);
+}
+
+.__empty_link:hover:after{
+    width: 100%;
+}
+
+.__link_with-icon{
+    color: var(--hover-primary-color);
+}
+
+.__link_with-icon i{
+    font-size: 20px;
+}
