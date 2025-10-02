@@ -13,7 +13,7 @@
 }
 
 /* Extra Large Screens */
-@media screen and (min-width: 1400px) and (max-width: 2560px){
+@media screen and (max-width: 1400px){
     .__header_wrapper,
     .__nav_wrapper {
         max-width: var(--container-max);
@@ -52,11 +52,6 @@
         margin-left: auto;
         margin-right: auto;
     } */
-}
-@media screen and (min-width:1024px ) and (max-width: 1400px){
-    .__footer_grid{
-         padding: 0 4%;
-    }
 }
 
 /* Large Screens */
@@ -177,7 +172,7 @@
 }
 
 /* Small Tablets */
-@media screwen and (max-width: 856px) {
+@media screen and (max-width: 856px) {
     .__map_icon-div,
     .__refer_friend-div {
         display: none !important;
@@ -212,7 +207,7 @@
 }
 
 /* Large Mobile */
-@media screen and (min-width: 768px) and (max-width:856px) {
+@media screen and (max-width: 768px){
     .__chat_box {
         width: 100px;
         height: 48px;
