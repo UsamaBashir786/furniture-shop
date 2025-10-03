@@ -841,3 +841,48 @@
         border-radius: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.__search_mobile_left {
+    display: none;
+}
+
+.__search_desktop_only {
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .__search_mobile_left {
+        display: block;
+    }
+    
+    .__search_desktop_only {
+        display: none;
+    }
+    
+    .__user_icon {
+        display: none;
+    }
+    
+    .__mobile_small_sreen___left--side {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .__nav_icons ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

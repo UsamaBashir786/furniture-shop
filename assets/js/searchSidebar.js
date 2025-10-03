@@ -1,6 +1,7 @@
 const searchSidebar = document.querySelector('.__search-sidebar');
 const closeBtn = document.getElementById('closeBtn');
-const searchOpenBtn = document.querySelector('[data-search-open]');
+const searchBtnDesktop = document.getElementById('searchBtn');
+const searchBtnMobile = document.getElementById('searchBtnMobile');
 
 function openSearchSidebar() {
     if (searchSidebar) {
@@ -16,23 +17,35 @@ function closeSearchSidebar() {
     }
 }
 
+// Close button
 if (closeBtn) {
     closeBtn.addEventListener('click', closeSearchSidebar);
 }
 
-if (searchOpenBtn) {
-    searchOpenBtn.addEventListener('click', openSearchSidebar);
+// Desktop search button (right side, >992px)
+if (searchBtnDesktop) {
+    searchBtnDesktop.addEventListener('click', openSearchSidebar);
 }
 
+// Mobile search button (left side, ≤992px)
+if (searchBtnMobile) {
+    searchBtnMobile.addEventListener('click', openSearchSidebar);
+}
+
+// Close sidebar when clicking outside
 document.addEventListener('click', function(event) {
     if (!searchSidebar) return;
+    
     const isClickInsideSidebar = searchSidebar.contains(event.target);
-    const isClickOnSearchBtn = searchOpenBtn && searchOpenBtn.contains(event.target);
-    if (!isClickInsideSidebar && !isClickOnSearchBtn && searchSidebar.classList.contains('activeSearch')) {
+    const isClickOnDesktopBtn = searchBtnDesktop && searchBtnDesktop.contains(event.target);
+    const isClickOnMobileBtn = searchBtnMobile && searchBtnMobile.contains(event.target);
+    
+    if (!isClickInsideSidebar && !isClickOnDesktopBtn && !isClickOnMobileBtn && searchSidebar.classList.contains('activeSearch')) {
         closeSearchSidebar();
     }
 });
 
+// Close sidebar with Escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape" && searchSidebar.classList.contains('activeSearch')) {
         closeSearchSidebar();
