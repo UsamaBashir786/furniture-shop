@@ -269,6 +269,10 @@ nav {
     left: 0;
 }
 
+#__mega_scrolled_class {
+    top: 106px ;
+}
+
 .__d-lg-none {
     display: none;
 }
