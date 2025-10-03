@@ -269,15 +269,14 @@ nav {
     left: 0;
 }
 
-#__mega_scrolled_class {
-    top: 106px ;
+.__css_on-scroll {
+    top: 106px !important;
 }
 
 .__d-lg-none {
     display: none;
 }
 
-/* Search icon visibility controls - Default desktop state */
 .__search_mobile_left {
     display: none;
 }

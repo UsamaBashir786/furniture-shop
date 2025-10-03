@@ -14,14 +14,4 @@ window.addEventListener('scroll', () => {
     myElement2.classList.toggle('__scrolled_classTwo', isScrolled);
   }
 });
-const scrollMegaThreshold = 100;
 
-const myMegaElement = document.getElementById('__mega_scrolled_class');  
-
-window.addEventListener('scroll', () => {
-  const isScrolled = window.scrollY > scrollThreshold;
-
-  if (myMegaElement) {
-    myMegaElement.classList.toggle('__mega_scrolled_class', isScrolled);
-  }
-});

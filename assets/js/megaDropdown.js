@@ -77,3 +77,90 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 });
+
+
+// setting mega menu on the base of scroll 
+// Threshold 100 > || ==
+// Remove Class < 100 For Defaut Position
+
+// const threshold = 100;
+// const isScrolled = document.getElementById.querySelector('mega-item');
+// if (threshold >= 100) {
+// window.addEventListener('isScrolled', ()=>{
+//     document.ClassList.toggle('__mega_scrolled-class');
+//     print(isScrolled);
+// })
+// }
+// if (threshold >= 100) {
+//     window.addEventListener('isScrolled', ()=>{
+//         document.ClassList.toggle('__mega_scrolled-class');
+//         print(isScrolled);
+//     })
+// }
+
+// if(!isScrolled){
+//     window.addEventListener.remove('isScrolled')
+// }
+
+
+// Adding Scrolled based position
+// Mega Menu
+
+// const scrollThreshold = 100;
+// const megaDropdonwn = document.querySelector('.mega-dropdown');
+// window.addEventListener('scroll', ()=>{
+//     if(!megaDropdonwn) return;
+//     if(window.scrollY >= scrollThreshold){
+//         megaDropdonwn.classList.add("__css_on-scroll");
+//     }else{
+//         megaDropdonwn.classList.remove("_css_on-scroll");
+//     }
+// });
+
+window.onscroll = function() {invertedsec()};
+function invertedsec() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-dropdown").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-dropdown").classList.remove('__css_on-scroll');
+  }
+  
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vTwo").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vTwo").classList.remove('__css_on-scroll');
+  }
+
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vThree").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vThree").classList.remove('__css_on-scroll');
+  }
+  
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vFour").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vFour").classList.remove('__css_on-scroll');
+  }
+
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vFive").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vFive").classList.remove('__css_on-scroll');
+  }
+
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vSix").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vSix").classList.remove('__css_on-scroll');
+  }
+
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+document.getElementById("mega-vSeven").classList.add('__css_on-scroll');
+  } else {
+document.getElementById("mega-vSeven").classList.remove('__css_on-scroll');
+  }
+
+
+  
+}
