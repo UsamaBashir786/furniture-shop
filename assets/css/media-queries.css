@@ -200,6 +200,9 @@
     .two-column-list {
         gap: 16px;
     }
+    .__d-lg-block{
+        display: block !important;
+    }   
 }
 
 @media screen and (max-width: 1024px) {

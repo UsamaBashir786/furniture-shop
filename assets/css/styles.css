@@ -289,11 +289,11 @@ nav {
     display: block;
 }
 
-@media screen and (max-width:992px){
+/* @media screen and (max-width:992px){
     .__d-lg-block{
         display: block !important;
     }   
-}
+} */
 
 /* ========================Bottom Bar======================== */
 .__bottom_bar-main {
