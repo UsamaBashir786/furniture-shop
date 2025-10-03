@@ -360,6 +360,25 @@
     }
 }
 
+@media screen and (max-width: 856px){ 
+    .__search-sidebar{
+        min-width: 90vw !important;
+        margin: auto;
+        top: 10px;
+        height: 400px;
+        gap: 12px;
+    }
+    .search_bar input[type="text"]{
+        font-size: 20px;
+    }
+    .__search-sidebar ul {
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .__chat_box {
         width: 90px;

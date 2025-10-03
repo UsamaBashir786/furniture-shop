@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const megaItems = document.querySelectorAll('.has-mega');
     const navItems = document.querySelector('.__nav_items');
+    let closeTimeout;
     
     function closeAllDropdowns() {
         megaItems.forEach(item => {
@@ -26,28 +27,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    function scheduleClose() {
+        closeTimeout = setTimeout(() => {
+            closeAllDropdowns();
+        }, 200); // 200ms delay before closing
+    }
+    
+    function cancelClose() {
+        if (closeTimeout) {
+            clearTimeout(closeTimeout);
+            closeTimeout = null;
+        }
+    }
+    
     megaItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
+            cancelClose();
             closeAllDropdowns();
             openDropdown(this);
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            scheduleClose();
         });
         
         const dropdown = item.querySelector('.mega-dropdown');
         if (dropdown) {
             dropdown.addEventListener('mouseenter', function() {
-                openDropdown(item);
+                cancelClose();
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                scheduleClose();
             });
         }
     });
-    
-    if (navItems) {
-        navItems.addEventListener('mouseleave', function(e) {
-            const toElement = e.relatedTarget;
-            if (!toElement || !toElement.closest('.mega-dropdown')) {
-                closeAllDropdowns();
-            }
-        });
-    }
     
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.__nav_items')) {
