@@ -17,22 +17,18 @@ function closeSearchSidebar() {
     }
 }
 
-// Close button
 if (closeBtn) {
     closeBtn.addEventListener('click', closeSearchSidebar);
 }
 
-// Desktop search button (right side, >992px)
 if (searchBtnDesktop) {
     searchBtnDesktop.addEventListener('click', openSearchSidebar);
 }
 
-// Mobile search button (left side, ≤992px)
 if (searchBtnMobile) {
     searchBtnMobile.addEventListener('click', openSearchSidebar);
 }
 
-// Close sidebar when clicking outside
 document.addEventListener('click', function(event) {
     if (!searchSidebar) return;
     
@@ -45,7 +41,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Close sidebar with Escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape" && searchSidebar.classList.contains('activeSearch')) {
         closeSearchSidebar();

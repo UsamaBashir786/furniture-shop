@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function scheduleClose() {
         closeTimeout = setTimeout(() => {
             closeAllDropdowns();
-        }, 200); // 200ms delay before closing
+        }, 200); 
     }
     
     function cancelClose() {

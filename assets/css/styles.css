@@ -127,7 +127,6 @@ header div.__map_icon-div svg {
     color: var(--white-color);
     text-align: center;
     font-size: 13px;
-    /* font-weight: 600; */
     background: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -147,6 +146,7 @@ header div.__map_icon-div svg {
 .swiper-rtl .swiper-button-next {
     font-weight: bolder;
 }
+
 /* ========================Navbar======================== */
 .__active::after {
     content: "";
@@ -268,9 +268,24 @@ nav {
     top: 120px;
     left: 0;
 }
-.__d-lg-none{
+
+.__d-lg-none {
     display: none;
 }
+
+/* Search icon visibility controls - Default desktop state */
+.__search_mobile_left {
+    display: none;
+}
+
+.__search_desktop_only {
+    display: block;
+}
+
+.__user_icon {
+    display: block;
+}
+
 @media screen and (max-width:992px){
     .__d-lg-block{
         display: block !important;
@@ -288,7 +303,6 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
-    /* z-index: 999; */
     flex-direction: row;
     gap: 40px;
     text-align: center;
@@ -765,8 +779,6 @@ main {
 
 .__question-wrapper__grid {
     border-radius: 8px;
-    /* padding: 40px; */
-    /* margin: 40px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -1024,7 +1036,6 @@ main {
 .faq-answer-content p:last-child {
     margin-bottom: 0;
 }
-
 /* ========================Footer======================== */
 .__footer-container {
     width: 100%;
@@ -1038,10 +1049,6 @@ main {
     gap: 40px;
     max-width: 1400px;
     margin: 0 auto;
-    /* padding: 0 4%; */
-}
-.__d-lg-none{
-    display: none;
 }
 
 .__footer-column {
@@ -1203,4 +1210,4 @@ main {
 
 .__footer-links a:hover {
     color: var(--white-color);
-}
+}.
