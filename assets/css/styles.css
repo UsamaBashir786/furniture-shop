@@ -58,6 +58,12 @@ li {
     display: flex;
 }
 
+.__responsive_class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 /* ========================Header======================== */
 header {
     width: 100%;
@@ -67,12 +73,12 @@ header {
 }
 
 .__header_wrapper {
-    width: 92% !important;
+    width: 100%;
     display: flex;
     min-height: 50px;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
     margin: 0 auto;
 }
 
@@ -201,7 +207,9 @@ nav {
 .__nav_items ul li a {
     color: var(--primary-color);
     font-size: 18px;
-    font-weight: 600;
+    line-height: 28px;
+    font-weight:bold;
+    letter-spacing: 0.5px;
     font-family: var(--font-primary);
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
@@ -310,7 +318,7 @@ nav {
     gap: 40px;
     text-align: center;
     background-color: var(--white-color);
-    box-shadow: 0 8px 15px #00000026;
+    box-shadow: 0 0px 15px #00000026;
 }
 
 .__bottom_bar-main .bottom_bar-wrapper .__bottom_bar {
@@ -508,7 +516,7 @@ main {
 }
 
 .__product_card {
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
@@ -529,6 +537,7 @@ main {
     font-size: 12px;
     font-weight: 600;
     font-family: var(--font-primary);
+    text-transform: uppercase;
 }
 
 .__product_img-div {
@@ -620,6 +629,9 @@ main {
     display: flex;
     align-items: center;
     gap: 12px;
+    color: rgba(21, 21, 21, 0.7);
+    font-weight: 400;
+    font-size: 18px;
     font-family: var(--font-primary);
 }
 
@@ -631,16 +643,19 @@ main {
 }
 
 .__product_card .product_pricing-info .product_cross {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--on-sales-cross-text);
-    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
     font-family: var(--font-primary);
+    color: rgb(104, 116, 156);
+    text-decoration: line-through;
+    line-height: 29px;
 }
 
 .__product_card .product_pricing-info .product_off {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
+    font-style: normal;
     color: var(--white-color);
     border-radius: 20px;
     display: flex;
@@ -648,6 +663,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 30px;
+    line-height: 22px;
     background-color: var(--products-badge-color);
     font-family: var(--font-primary);
 }

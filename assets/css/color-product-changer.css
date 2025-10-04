@@ -24,7 +24,7 @@
 }
 
 [class*="__color_option"].active-color {
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
   box-shadow: 0 0 0 2px var(--white-color), 0 0 0 4px var(--primary-color);
   transform: scale(1);
 }
@@ -35,8 +35,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
+  width: 2px;
+  height: 2px;
   background-color: var(--white-color);
   border-radius: 50%;
   opacity: 0;

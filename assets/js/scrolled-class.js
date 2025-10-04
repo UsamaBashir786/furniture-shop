@@ -1,4 +1,4 @@
-const scrollThreshold = 100;
+const scrollThreshold = 50;
 
 const myElement = document.getElementById('__scrolled_class'); 
 const myElement2 = document.getElementById('__scrolled_classTwo'); 
