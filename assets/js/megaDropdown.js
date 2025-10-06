@@ -86,64 +86,64 @@ function invertedsec() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-dropdown").classList.add("__css_on-scroll");
+    document.getElementById("mega-dropdown").classList.add("css-on-scroll");
   } else {
     document
       .getElementById("mega-dropdown")
-      .classList.remove("__css_on-scroll");
+      .classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vTwo").classList.add("__css_on-scroll");
+    document.getElementById("mega-vTwo").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vTwo").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vTwo").classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vThree").classList.add("__css_on-scroll");
+    document.getElementById("mega-vThree").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vThree").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vThree").classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vFour").classList.add("__css_on-scroll");
+    document.getElementById("mega-vFour").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vFour").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vFour").classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vFive").classList.add("__css_on-scroll");
+    document.getElementById("mega-vFive").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vFive").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vFive").classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vSix").classList.add("__css_on-scroll");
+    document.getElementById("mega-vsix").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vSix").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vsix").classList.remove("css-on-scroll");
   }
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById("mega-vSeven").classList.add("__css_on-scroll");
+    document.getElementById("mega-vseven").classList.add("css-on-scroll");
   } else {
-    document.getElementById("mega-vSeven").classList.remove("__css_on-scroll");
+    document.getElementById("mega-vseven").classList.remove("css-on-scroll");
   }
 }

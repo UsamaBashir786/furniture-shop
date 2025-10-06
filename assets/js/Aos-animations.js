@@ -1,4 +1,4 @@
-// ===============AOS Animations
+  // ===============AOS Animations
 AOS.init({
   once: true
 });

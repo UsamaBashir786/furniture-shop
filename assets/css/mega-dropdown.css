@@ -1,5 +1,5 @@
 /* 
-  Roots Separate For MegaDrop___Down
+  roots separate mega drop down
 */
 :root {
   --mega-top: 166px;
@@ -10,21 +10,21 @@
 
 
 
-.__nav_wrapper { 
+.nav-wrapper { 
   position: relative; 
 }
 
-.__nav_items ul li { 
+.nav-items ul li { 
   position: relative; 
 }
 
-.__nav_items ul li a { 
+.nav-items ul li a { 
   text-decoration: none; 
   color: var(--primary-text); 
   display: block; 
 }
 
-.__nav_items ul li.has-mega .mega-dropdown {
+.nav-items ul li.has-mega .mega-dropdown {
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -90,7 +90,7 @@
 .mega-dropdown .mega-banner {
   background: var(--background-color);
   border-radius: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -138,17 +138,17 @@
 }
 
 @media screen and (max-width: 992px) {
-  .__nav_items ul li.has-mega .mega-dropdown {
+  .nav-items ul li.has-mega .mega-dropdown {
     display: none !important;
   }
   
-  .__nav_items ul li.has-mega:hover::after {
+  .nav-items ul li.has-mega:hover::after {
     display: none;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .__nav_items ul li.has-mega .mega-dropdown {
+  .nav-items ul li.has-mega .mega-dropdown {
     padding: 30px 40px;
     gap: 30px;
   }

@@ -1,4 +1,4 @@
-.__chat_box {
+.chat-box {
     position: fixed;
     display: flex;
     align-items: center;
@@ -19,14 +19,14 @@
     transition: all 0.3s ease;
 }
 
-.__chat_box:hover {
+.chat-box:hover {
     background-color: var(--primary-dark);
     border: 2px solid var(--background-color-2);
     color: var(--background-color-2);
 }
 
 @media screen and (max-width: 768px) {
-    .__chat_box {
+    .chat-box {
         width: 100px;
         height: 48px;
         font-size: 14px;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .__chat_box {
+    .chat-box {
         width: 90px;
         height: 45px;
         font-size: 13px;
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 415px) {
-    .__chat_box {
+    .chat-box {
         width: 80px;
         height: 42px;
         font-size: 12px;
@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .__chat_box {
+    .chat-box {
         width: 75px;
         height: 40px;
         font-size: 11px;
@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .__chat_box {
+    .chat-box {
         width: 70px;
         height: 38px;
         font-size: 10px;

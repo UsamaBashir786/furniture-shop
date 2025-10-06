@@ -1,143 +1,143 @@
 document.addEventListener('DOMContentLoaded', function() {
     const productImages = {
         // ===== Bed Frames =====
-        '__product_one_target': {
-            '__color_option_one': {
+        'product-one-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_1.webp',
                 hover: 'assets/img/bed/product_1-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_2.webp',
                 hover: 'assets/img/bed/product_2-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_3.webp',
                 hover: 'assets/img/bed/product_3-hover.webp'
             }
         },
-        '__product_two_target': {
-            '__color_option_one': {
+        'product-two-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_2.webp',
                 hover: 'assets/img/bed/product_2-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_3.webp',
                 hover: 'assets/img/bed/product_3-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_4.webp',
                 hover: 'assets/img/bed/product_4-hover.webp'
             }
         },
-        '__product_three_target': {
-            '__color_option_one': {
+        'product-three-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_3.webp',
                 hover: 'assets/img/bed/product_3-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_4.webp',
                 hover: 'assets/img/bed/product_4-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_5.webp',
                 hover: 'assets/img/bed/product_5-hover.jpg'
             }
         },
-        '__product_four_target': {
-            '__color_option_one': {
+        'product-four-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_4.webp',
                 hover: 'assets/img/bed/product_4-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_5.webp',
                 hover: 'assets/img/bed/product_5-hover.jpg'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_6.webp',
                 hover: 'assets/img/bed/product_6-hover.webp'
             }
         },
-        '__product_five_target': {
-            '__color_option_one': {
+        'product-five-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_5.webp',
                 hover: 'assets/img/bed/product_5-hover.jpg'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_6.webp',
                 hover: 'assets/img/bed/product_6-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_7.webp',
                 hover: 'assets/img/bed/product_7-hover.webp'
             }
         },
-        '__product_six_target': {
-            '__color_option_one': {
+        'product-six-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_6.webp',
                 hover: 'assets/img/bed/product_6-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_7.webp',
                 hover: 'assets/img/bed/product_7-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_1.webp',
                 hover: 'assets/img/bed/product_1-hover.webp'
             }
         },
-        '__product_seven_target': {
-            '__color_option_one': {
+        'product-seven-target': {
+            'color-option-one': {
                 default: 'assets/img/bed/product_7.webp',
                 hover: 'assets/img/bed/product_7-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/bed/product_1.webp',
                 hover: 'assets/img/bed/product_1-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/bed/product_2.webp',
                 hover: 'assets/img/bed/product_2-hover.webp'
             }
         },
 
         // ===== Headboards =====
-        '__headboard_one_target': {
-            '__color_option_one': {
+        'headboard-one-target': {
+            'color-option-one': {
                 default: 'assets/img/headboards/product_1.webp',
                 hover: 'assets/img/headboards/product_1-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/headboards/product_2.webp',
                 hover: 'assets/img/headboards/product_2-hover.webp'
             }
         },
-        '__headboard_two_target': {
-            '__color_option_one': {
+        'headboard-two-target': {
+            'color-option-one': {
                 default: 'assets/img/headboards/product_2.webp',
                 hover: 'assets/img/headboards/product_2-hover.webp'
             },
-            '__color_option_two': {
+            'color-option-two': {
                 default: 'assets/img/headboards/product_1.webp',
                 hover: 'assets/img/headboards/product_1-hover.webp'
             },
-            '__color_option_three': {
+            'color-option-three': {
                 default: 'assets/img/headboards/product_2.webp',
                 hover: 'assets/img/headboards/product_2-hover.webp'
             }
         }
     };
 
-    const productCards = document.querySelectorAll('.__product_card');
+    const productCards = document.querySelectorAll('.product-card');
 
     productCards.forEach(card => {
-        const colorSelection = card.querySelector('[class*="__product_color_selection"]');
+        const colorSelection = card.querySelector('[class*="product-color-selection"]');
         if (!colorSelection) return;
 
-        const colorOptions = colorSelection.querySelectorAll('[class*="__color_option"]');
+        const colorOptions = colorSelection.querySelectorAll('[class*="color-option"]');
 
         let productClass = null;
         card.classList.forEach(cls => {
-            if (cls.includes('_target')) {
+            if (cls.includes('-target')) {
                 productClass = cls;
             }
         });
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 let colorClass = null;
                 this.classList.forEach(cls => {
-                    if (cls.includes('__color_option')) {
+                    if (cls.includes('color-option')) {
                         colorClass = cls;
                     }
                 });

@@ -1,6 +1,6 @@
 (() => {
-  const openBtn = document.getElementById('mobileMenuBtn');
-  const menu    = document.getElementById('mobiMenu');
+  const openBtn = document.getElementById('mobile-menu-btn');
+  const menu    = document.getElementById('mobile-menu');
   const scrim   = menu.querySelectorAll('[data-close]');
   const root    = document.getElementById('mm-root');
   const sub     = document.getElementById('mm-sub');
@@ -22,8 +22,8 @@
   scrim.forEach(el => el.addEventListener('click', close));
   menu.querySelector('[data-back]').addEventListener('click', showRoot);
 
-  root.querySelector('.mm__list').addEventListener('click', (e) => {
-    const btn = e.target.closest('.mm__row[data-sub]');
+  root.querySelector('.mm-list').addEventListener('click', (e) => {
+    const btn = e.target.closest('.mm-row[data-sub]');
     if (!btn) return;
     showSub(btn.dataset.sub);
   });
