@@ -1,4 +1,4 @@
-const scrollThreshold = 50;
+const scrollThreshold = 60;
 
 const myElement = document.getElementById('scrolled-class'); 
 const myElement2 = document.getElementById('scrolled-classTwo'); 
@@ -8,6 +8,10 @@ window.addEventListener('scroll', () => {
 
   if (myElement) {
     myElement.classList.toggle('scrolled-class', isScrolled);
+  }
+  
+  if(!myElement){
+    myElement.classList.toggle('scrolled-classTwo', isScrolled);
   }
 
   if (myElement2) {

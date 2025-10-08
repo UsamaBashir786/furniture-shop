@@ -97,6 +97,7 @@
     nav{
         height: 104px;
     }
+
     .refer-friend{
         font-size: 18px;
         line-height: 29px;
@@ -120,6 +121,7 @@
     }
     .bottom-bar-main .bottom-bar-wrapper{
         gap: 1rem;
+        display: flex;
     }
     
     .bottom-bar-main .bottom-bar-wrapper .bottom-bar{
@@ -211,10 +213,18 @@
     .mega-dropdown .mega-banner{
         display: none !important;
     }
+        .product-img-div{
+        width: 269.4px;
+        height: 202.05px;
+    }
     
 }
 
 @media screen and (max-width: 1200px) {
+    .product-img-div{
+        width: 100%;
+        height: 100%;
+    }
     .products-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
@@ -241,7 +251,8 @@
         gap: 20px;
     }
     .product-img-div {
-        height: auto;
+        height: 100;
+        width: 100%;
     }
     .product-img-div{
         width: 100%;

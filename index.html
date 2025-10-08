@@ -555,11 +555,16 @@
                     </div>
 
                     <div class="nav-icons">
-                        <svg data-search-open role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search d-sm-none" viewBox="0 0 22 22"><circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle><path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <a id="search-btn-mobile" class="search-btn" href="javascript:void(0)">
+                            <svg data-search-open role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22"><circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle><path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <!-- <svg data-search-open role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search d-sm-none" viewBox="0 0 22 22"><circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle><path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
                         <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-account" viewBox="0 0 22 22"><circle cx="11" cy="7" r="4" fill="none" stroke="currentColor"></circle><path d="M3.5 19c1.421-2.974 4.247-5 7.5-5s6.079 2.026 7.5 5" fill="none" stroke="currentColor" stroke-linecap="round"></path></svg>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class="d-lg-none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9999 4.95834C11.6077 4.95834 12.1906 5.19979 12.6204 5.62956C13.0501 6.05933 13.2916 6.64222 13.2916 7.25001C13.2916 7.55096 13.2323 7.84896 13.1171 8.12699C13.002 8.40503 12.8332 8.65766 12.6204 8.87046C12.4076 9.08326 12.1549 9.25207 11.8769 9.36723C11.5989 9.4824 11.3009 9.54168 10.9999 9.54168C10.3921 9.54168 9.80924 9.30023 9.37947 8.87046C8.94969 8.44069 8.70825 7.8578 8.70825 7.25001C8.70825 6.64222 8.94969 6.05933 9.37947 5.62956C9.80924 5.19979 10.3921 4.95834 10.9999 4.95834ZM10.9999 0.833344C12.7017 0.833344 14.3338 1.50938 15.5372 2.71274C16.7405 3.9161 17.4166 5.5482 17.4166 7.25001C17.4166 12.0625 10.9999 19.1667 10.9999 19.1667C10.9999 19.1667 4.58325 12.0625 4.58325 7.25001C4.58325 5.5482 5.25929 3.9161 6.46265 2.71274C7.66601 1.50938 9.29811 0.833344 10.9999 0.833344ZM10.9999 2.66668C9.78434 2.66668 8.61855 3.14956 7.75901 4.0091C6.89947 4.86865 6.41659 6.03443 6.41659 7.25001C6.41659 8.16668 6.41659 10 10.9999 16.1508C15.5833 10 15.5833 8.16668 15.5833 7.25001C15.5833 6.03443 15.1004 4.86865 14.2408 4.0091C13.3813 3.14956 12.2155 2.66668 10.9999 2.66668Z" fill="#1E306E"></path></svg>
-                        <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-cart" viewBox="0 0 22 22"><path d="M14.666 7.333a3.666 3.666 0 1 1-7.333 0M3.33 6.785l-.642 7.7c-.137 1.654-.206 2.48.073 3.119a2.75 2.75 0 0 0 1.21 1.314c.612.332 1.442.332 3.102.332h7.853c1.66 0 2.49 0 3.103-.332a2.75 2.75 0 0 0 1.21-1.314c.279-.638.21-1.465.072-3.12l-.642-7.7c-.118-1.423-.178-2.134-.493-2.673A2.75 2.75 0 0 0 16.99 3.02c-.563-.269-1.277-.269-2.705-.269h-6.57c-1.428 0-2.142 0-2.705.27A2.75 2.75 0 0 0 3.823 4.11c-.315.539-.374 1.25-.493 2.674Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>                                    
-
+                        <span class="cart-badge">
+                            <div class="badge">2</div>
+                            <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-cart" viewBox="0 0 22 22"><path d="M14.666 7.333a3.666 3.666 0 1 1-7.333 0M3.33 6.785l-.642 7.7c-.137 1.654-.206 2.48.073 3.119a2.75 2.75 0 0 0 1.21 1.314c.612.332 1.442.332 3.102.332h7.853c1.66 0 2.49 0 3.103-.332a2.75 2.75 0 0 0 1.21-1.314c.279-.638.21-1.465.072-3.12l-.642-7.7c-.118-1.423-.178-2.134-.493-2.673A2.75 2.75 0 0 0 16.99 3.02c-.563-.269-1.277-.269-2.705-.269h-6.57c-1.428 0-2.142 0-2.705.27A2.75 2.75 0 0 0 3.823 4.11c-.315.539-.374 1.25-.493 2.674Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>                                    
+                        </span>
                         <!-- <ul>
                             <li class="search-desktop-only">
                                 <a id="search-btn" class="search-btn" href="javascript:void(0)">
@@ -588,6 +593,7 @@
             <!-- ================Bottom Bar================ -->
             <div id="scrolled-classTwo" class="bottom-bar-main">
                 <div class="bottom-bar-wrapper">
+                    
                     <div class="bottom-bar">
                         <div class="img-wrapper">
                             <img src="assets/img/bottom-bar/bottom__bar_1.svg" alt="" />
@@ -609,11 +615,11 @@
                         </div>
                         <p>Headboards</p>
                     </div>
-                    <div class="bottom-bar">
+                    <div class="bottom-bar foundation">
                         <div class="img-wrapper">
                             <img src="assets/img/bottom-bar/bottom__bar_4.svg" alt="" />
                         </div>
-                        <p>Foundations</p>
+                        <p>Foundation</p>
                     </div>
                 </div>
             </div>
@@ -734,9 +740,9 @@
             <!-- =====================Main Banner===================== -->
             <div class="main-wrapper-one">
                 <div class="main-img-div">
-                    <h3 class="furniture-responsive-heading-one">FURNITURE</h3>
-                    <h1 class="furniture-responsive-heading-two">Up to 30% off Furniture</h1>
-                    <h3 class="furniture-responsive-heading-three">Support your mattress in style.</h3>
+                    <h3 style="margin-top: 1px;display: inline-block;" class="furniture-responsive-heading-one">FURNITURE</h3>
+                    <h1 class="furniture-responsive-heading-two" style="margin-top: -1px;">Up to 30% off Furniture</h1>
+                    <h3 class="furniture-responsive-heading-three" style="">Support your mattress in style.</h3>
                 </div>
             </div>
             <!-- =====================Adjustables===================== -->
@@ -748,15 +754,15 @@
                     <h3>Adjustables</h3>
                 </div>
                 <div class="products-wrapper">
-                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <div class="product-badge">Best Value</div>
                         </span>
                         <div class="product-img-div">
-                            <img class="on-hover-display-one-hide" src="assets/img/adjustables/product_1.webp" alt="" />
-                            <img class="on-hover-display-one-show" src="assets/img/adjustables/product_1-hover.webp" alt="" />
+                            <img class="on-hover-display-one-show" src="assets/img/adjustables/product_1.webp" alt="" />
+                            <img class="on-hover-display-one-hide" src="assets/img/adjustables/product_1-hover.webp" alt="" />
                         </div>
-                        <a>Adjustable Base</a>
+                        <a class="products-headings">Adjustable Base</a>
                         <span class="product-pricing-info">
                             From
                             <!-- <br class="responsive-class"> -->
@@ -767,13 +773,13 @@
                             </div>
                         </span>
                     </div>
-                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <div class="product-badge">Most Supportive</div>
                         </span>
                         <div class="product-img-div">
-                            <img class="on-hover-display-two-hide" src="assets/img/adjustables/product_2.webp" alt="" />
-                            <img class="on-hover-display-two-show" src="assets/img/adjustables/product_2-hover.webp" alt="" />
+                            <img class="on-hover-display-two-show" src="assets/img/adjustables/product_2.webp" alt="" />
+                            <img class="on-hover-display-two-hide" src="assets/img/adjustables/product_2-hover.webp" alt="" />
                         </div>
                         <a>Adjustable Base Pro</a>
                         <span class="product-pricing-info">
@@ -786,13 +792,13 @@
                             </div>
                         </span>
                     </div>
-                    <div class="product-card product-three-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-three-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <div class="product-badge">Most Advanced</div>
                         </span>
                         <div class="product-img-div">
-                            <img class="on-hover-display-three-hide" src="assets/img/adjustables/product_3.webp" alt="" />
-                            <img class="on-hover-display-three-show" src="assets/img/adjustables/product_3-hover.webp" alt="" />
+                            <img class="on-hover-display-three-show" src="assets/img/adjustables/product_3.webp" alt="" />
+                            <img class="on-hover-display-three-hide" src="assets/img/adjustables/product_3-hover.webp" alt="" />
                         </div>
                         <a>Adjustable Base Max</a>
                         <span class="product-pricing-info">
@@ -804,7 +810,7 @@
                             </div>
                         </span>
                     </div>
-                    <div class="product-card product-four-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-four-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Advanced</div> -->
                         </span>
@@ -829,7 +835,7 @@
                     <h3>Bed Frames</h3>
                 </div>
                 <div class="products-wrapper">
-                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Best Value</div> -->
                         </span>
@@ -852,7 +858,7 @@
                             <div class="color-option-three"></div>
                         </div>
                     </div>
-                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Supportive</div> -->
                         </span>
@@ -876,7 +882,7 @@
                         </div>
                         <!-- <div class="product-color-selection-two"></div> -->
                     </div>
-                    <div class="product-card product-three-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-three-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <div class="product-badge">Best Seller</div>
                         </span>
@@ -899,7 +905,7 @@
                             <div class="color-option-three"></div>
                         </div>
                     </div>
-                    <div class="product-card product-four-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-four-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Advanced</div> -->
                         </span>
@@ -922,7 +928,7 @@
                             <div class="color-option-three"></div>
                         </div>
                     </div>
-                    <div class="product-card product-five-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-five-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Advanced</div> -->
                         </span>
@@ -945,7 +951,7 @@
                             <div class="color-option-three"></div>
                         </div>
                     </div>
-                    <div class="product-card product-six-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-six-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Advanced</div> -->
                         </span>
@@ -968,7 +974,7 @@
                             <div class="color-option-three"></div>
                         </div>
                     </div>
-                    <div class="product-card product-seven-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-seven-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Advanced</div> -->
                         </span>
@@ -999,7 +1005,7 @@
                     <h3>Attachable Headboards</h3>
                 </div>
                 <div class="products-wrapper">
-                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-one-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Best Value</div> -->
                         </span>
@@ -1021,7 +1027,7 @@
                             <div class="color-option-two"></div>
                         </div>
                     </div>
-                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="product-card product-two-target" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <span>
                             <!-- <div class="product-badge">Most Supportive</div> -->
                         </span>
@@ -1048,17 +1054,17 @@
             </div>
             <!-- =====================Banner===================== -->
             <div class="main-wrapper-two pointer" onclick="window.location.href='empty-page.html'">
-                <div class="products-wrapper banner-wrapper" data-aos="zoom-in" data-aos-duration="800">
+                <div class="products-wrapper banner-wrapper" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                     <img src="assets/img/banner.webp" alt="">
                 </div>
             </div>
             <!-- =====================Block Templates===================== -->
             <div class="main-wrapper-two">
                 <div class="block-template">
-                    <div class="block-template-img" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="block-template-img" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <img src="assets/img/block_template.webp" alt="block_template" />
                     </div>
-                    <div class="block-template-content" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="block-template-content" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <h2>Want to use your current bed frame?</h2>
                         <p>
                             Our mattresses are designed to be versatile, and can work with your existing setup. If you're used to a traditional box spring, however, we recommend our foundation instead — for the flat, even support foam
@@ -1244,10 +1250,10 @@
             <!-- =====================Block Templates===================== -->
             <div class="main-wrapper-two">
                 <div class="block-template">
-                    <div class="block-template-img" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="block-template-img" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <img src="assets/img/feel__difference.webp" alt="block_template" />
                     </div>
-                    <div class="block-template-content change-bg-different" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="block-template-content change-bg-different" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                         <h2>Feel the difference in store</h2>
                         <p>Try products for yourself and chat with a Sleep Specialist at a store near you.</p>
                         <a href="javascript:void(0)" class="block-template-button">Find a location near you</a>
