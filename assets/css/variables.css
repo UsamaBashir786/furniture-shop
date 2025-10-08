@@ -2,7 +2,8 @@
     --primary-color: #1e306e;
     --primary-dark: #26417f;
     --primary-text: #012169;
-    --sale-color: #dd7c73;
+    --sale-color: #cb372a;
+    --sale-hover:#df847c;
     --white-color: #ffffff;
     --background-color: #eef1f7;
     --background-color-2: rgb(132, 184, 224);
@@ -15,6 +16,9 @@
     --font-primary: "CalibreWeb", sans-serif;
     --font-secondary: "NewKansas", sans-serif;
     --font-tertiary: "SuisseIntl", sans-serif;
+    --font-calibmedium: "Calibmedium", sans-serif;
+    --font-calibregular: "Calibregular", sans-serif;
+    --font-newkansasregular: "NewKansasRegular", sans-serif;
     --text-h0: 4.5rem;
     --text-h1: 3.5rem;
     --text-h2: 2.75rem;
@@ -22,4 +26,13 @@
     --text-h4: 1.75rem;
     --text-h5: 1.375rem;
     --text-h6: 1.25rem; 
+    --text-xs:0.875rem;
+
+    --spacing-4:1rem;
+    --spacing-5:1.25rem;
+    --header-link-list-spacing:2rem;
+    --header-icon-list-spacing:1.25rem;
+    --heading-letter-spacing:-0.01em;
+    --heading-text-transform:normal;
+    --spacing-2-5:0.625rem;
 }
