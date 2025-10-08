@@ -149,8 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (!defaultImg || !hoverImg) return;
 
-        if (colorOptions.length > 0) {
-            colorOptions[0].classList.add('active-color');
+        if (colorOptions.values[1]) {
+            colorOptions[1].classList.add('active-color');
         }
 
         colorOptions.forEach(colorOption => {

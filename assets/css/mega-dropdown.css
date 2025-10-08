@@ -39,8 +39,9 @@
   padding: 40px 60px;
   z-index: var(--mega-z);
   box-sizing: border-box;
-  grid-template-columns: repeat(4, 1fr) 1.2fr;
+  grid-template-columns: repeat(4, 1fr) 1.7fr;
   gap: 40px;
+  height: 400.55px;
   align-items: start;
   pointer-events: auto;
 }
@@ -74,17 +75,26 @@
   font-family: var(--font-primary);
 }
 
+.setting-mega-heading-row h4{
+  font-family: var(--calibregular) !important;
+}
+
 .mega-item a:hover { 
   color: var(--products-badge-color); 
 }
 
 .mega-item p {
   font-size: 13px;
-  color: var(--on-sales-cross-text);
+  color: var(--black-color);
   margin-top: 4px;
   line-height: 1.5;
   max-width: 220px;
   font-family: var(--font-primary);
+}
+
+.setting-mega-heading-row{
+  align-items: left;
+  text-align: left;
 }
 
 .mega-dropdown .mega-banner {

@@ -1,4 +1,8 @@
   // ===============AOS Animations
+// AOS.init({
+//   once: true
+// });
 AOS.init({
-  once: true
-});
+    startEvent: 'DOMContentLoaded',
+    once: true
+  });

@@ -4,6 +4,7 @@
     --primary-text: #012169;
     --button-background-primary:rgb(1 33 105);
     --sale-color: #cb372a;
+    --black-color:#000;
     --sale-hover:#df847c;
     --white-color: #ffffff;
     --background-color: #eef1f7;
@@ -42,4 +43,5 @@
 
     --size:1rem;
     --rounded-full:9999px;
+    --rounded-lg:1.5rem;
 }
