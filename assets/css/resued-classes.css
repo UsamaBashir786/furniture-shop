@@ -1,3 +1,4 @@
+.primary-color {color: var(--primary-color);color: var(--primary-dark) !important;text-decoration: underline !important;font-weight: bold !important;font-family: var(--font-calibmedium) !important;}
 .text-center {text-align: center;}
 .d-inline {display: inline !important;}
 .d-flex { display: flex; }

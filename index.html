@@ -47,7 +47,7 @@
         <!-- ==========================Link Swiper's CSS========================== -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <!-- ==========================AOS Animations========================== -->
-        <link rel="stylesheet" href="assets/node_modules/aos/dist/aos.css" />
+        <!-- <link rel="stylesheet" href="assets/node_modules/aos/dist/aos.css" /> -->
     </head>
     <body>
         <!-- ================Header================ -->
@@ -756,10 +756,7 @@
                 
             </div>
             <!-- =====================Adjustables===================== -->
-             <div>
-                <!-- <br><br> -->
-             </div>
-            <div class="main-wrapper-two">
+            <div class="only-adjust-target main-wrapper-two section-to-animate">
                 <div class="section-heading">
                     <h3>Adjustables</h3>
                 </div>
@@ -837,7 +834,7 @@
 
             </div>
             <!-- =====================Bed Frames===================== -->
-            <div class="main-wrapper-two">
+            <div class="only-adjust-target main-wrapper-two section-to-animate">
                 <div class="section-heading">
                     <h3>Bed Frames</h3>
                 </div>
@@ -1007,7 +1004,7 @@
                 </div>
             </div>
             <!-- =====================Attachable Headboards===================== -->
-            <div class="main-wrapper-two">
+            <div class="only-adjust-target main-wrapper-two section-to-animate">
                 <div class="section-heading">
                     <h3>Attachable Headboards</h3>
                 </div>
@@ -1061,7 +1058,7 @@
             </div>
 
             <!-- =====================Banner===================== -->
-            <div class="main-wrapper-two pointer" onclick="window.location.href='empty-page.html'">
+            <div class="main-wrapper-two pointer section-to-animate" onclick="window.location.href='empty-page.html'">
                 <div class="products-wrapper banner-wrapper" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
                     <img src="assets/img/banner.webp" alt="">
                 </div>
@@ -1175,12 +1172,14 @@
                     </div>
                 </div>
             </div>
+            <!-- ================Some Space================ -->
+             <div class="space-between-faq-question-boxes"></div>
             <!-- ================Still have some questions================ -->
             <div class="main-wrapper-two">
                 <div class="question-cotainer">
                     <div class="question-grid-box">
                         <h1 class="question-title">Still have questions?</h1>
-                        <p class="question-text">Our Sleep Specialists are dedicated to helping you find the mattress of your dreams. Give us a call or chat with us now.</p>
+                        <p class="question-text"><strong>Our Sleep Specialists are dedicated to helping you find the mattress of your dreams. Give us a call or chat with us now.</strong></p>
                     </div>
                     <div class="question-wrapper-grid">
                         <div class="question-card pointer" href="tel:+923196977218"  href="tel:+923196977218">
@@ -1198,7 +1197,7 @@
                             </a>
                             <a class="question-info" href="tel:+923196977218">
                                 <p>Our team is standing by to help you sleep more easily.</p>
-                                <a href="tel:+923196977218">1-888-995-2507</a>
+                                <a class="custom-target primary-color" href="tel:+923196977218">1-888-995-2507</a>
                             </a>
                         </div>
                         <div class="question-card pointer">
@@ -1596,12 +1595,13 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="assets/js/swipper.js" defer></script>
         <script src="assets/node_modules/aos/dist/aos.js"></script>
-        <script src="assets/js/Aos-animations.js"></script>
+        <!-- <script src="assets/js/Aos-animations.js"></script> -->
         <script src="assets/js/faqs.js"></script>
         <script src="assets/js/searchSidebar.js"></script>
         <script src="assets/js/scrolled-class.js"></script>
         <script src="assets/js/megaDropdown.js"></script>
         <script src="assets/js/box-menu.js"></script>
         <script src="assets/js/color-product-changer.js"></script>
+        <script src="assets/js/observer.js"></script>
     </body>
 </html>
