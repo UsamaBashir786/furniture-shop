@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      #__mega_scrolled_class {
-        top: 106px;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      const scrollThreshold = 100;
-
-      const myElement = document.getElementById("__scrolled_class");
-      const myElement2 = document.getElementById("__scrolled_classTwo");
-
-      window.addEventListener("scroll", () => {
-        const isScrolled = window.scrollY > scrollThreshold;
-
-        if (myElement) {
-          myElement.classList.toggle("__scrolled_class", isScrolled);
-        }
-
-        if (myElement2) {
-          myElement2.classList.toggle("__scrolled_classTwo", isScrolled);
-        }
-      });
-      const scrollMegaThreshold = 100;
-
-      const myMegaElement = document.getElementById("__mega_scrolled_class");
-
-      window.addEventListener("scroll", () => {
-        const isScrolled = window.scrollY > scrollThreshold;
-
-        if (myMegaElement) {
-          myMegaElement.classList.toggle("__mega_scrolled_class", isScrolled);
-        }
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  body,
+  html {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      
+  }
+  
+  .image-animation{
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: tomato;
+  }
+</style>
+<body>
+  <div class="image-animation">
+    
+  </div>
+</body>
 </html>
