@@ -16,6 +16,8 @@
   position: relative; 
 }
 
+
+
 .nav-items ul li a { 
   text-decoration: none; 
   letter-spacing: 0.01em;
@@ -30,7 +32,7 @@
   transform: translateY(10px);
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, display 0s 0.25s;
   position: fixed;
-  top: var(--mega-top);
+  top: 157.5px;
   left: 0;
   width: 100vw;
   background: var(--white-color);
@@ -100,7 +102,6 @@
 .mega-dropdown .mega-banner {
   background: var(--background-color);
   border-radius: 10px;
-  /* padding: 20px; */
   text-align: center;
   display: flex;
   flex-direction: column;

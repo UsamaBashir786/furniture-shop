@@ -24,7 +24,6 @@
 }
 
 [class*="color-option"].active-color {
-  /* border: 2px solid var(--primary-color); */
   box-shadow: 0 0 0 2px var(--white-color), 0 0 0 4px var(--primary-color);
   transform: scale(1);
 }
@@ -61,6 +60,7 @@
 [class*="product-color-selection"] {
   display: flex;
   gap: 8px;
+  margin-top: 2px;
   align-items: center;
   justify-content: flex-start;
   padding: 8px 0;

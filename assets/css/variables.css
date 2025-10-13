@@ -65,8 +65,7 @@
 
 
     --gap-3:0.75rem;
-    /* --gap-2:0.; */
-
+    
     --footer-font-size:18px;
     --footer-copyright-font-size:16px;
     --footer-block-list-gap: var(--spacing-10) var(--spacing-24);
