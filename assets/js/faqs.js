@@ -1,5 +1,3 @@
-// Question active card
-
 document.addEventListener("DOMContentLoaded", function () {
   const questionCards = document.querySelectorAll(".question-card");
 
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Faq's
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
