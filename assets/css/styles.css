@@ -176,7 +176,12 @@ header div.map-icon-div svg {
     color: var(--white-color);
     cursor: pointer;
 }
-
+.banner-sm{
+    display: none;
+}
+.banner-lg{
+    display: block;
+}
 /* ========================Swiper Slider======================== */
 .swiper {
     width: 450px;
@@ -188,8 +193,17 @@ header div.map-icon-div svg {
 .swiper p,
 .swiper a {
     height: 28.8px;
-    margin: 1.5px;
-    margin-top: px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.swiper-slide p,
+.swiper-slide a{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
 
 .swiper-button-prev:after {
@@ -260,7 +274,7 @@ header div.map-icon-div svg {
 }
 
 /* ========================Navbar======================== */
-.active::after {
+/* .active::after {
     content: "";
     position: absolute;
     display: block;
@@ -270,7 +284,18 @@ header div.map-icon-div svg {
     background-color: var(--primary-text);
     transform-origin: left;
     transition: transform 0.4s ease;
-}
+} */
+ .link-active::after{
+    content:  '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    background-color: var(--primary-color);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+ }
 
 nav {
     width: 100%;
@@ -393,6 +418,7 @@ nav {
 .nav-icons ul li a:hover {
     color: var(--hover-primary-color);
 }
+
 
 .nav-icons-small-screen {
     display: none;
@@ -1445,7 +1471,7 @@ main {
 
 /* ========================FAQs======================== */
 .overflow-x-hidden {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .faq-container {
     max-width: 900px;
@@ -1617,6 +1643,7 @@ footer {
     justify-content: center;
     color: var(--white-color);
     font-family: var(--font-primary);
+    overflow-y: hidden;
 }
 
 .footer-wrapper {

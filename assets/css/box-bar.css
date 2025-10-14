@@ -30,26 +30,34 @@ body {
     cursor: pointer;
 }
 
+
 .mm {
     position: fixed;
-    inset: 0;
-    display: none;
     z-index: 99999;
-}
-.mm.is-open {
-    display: block;
+    bottom: 1px;
+    left: 10px;
+    transition: 0.5s ease-in;
+    height: 476px;
+    right: 10px;
+    top: 800px;
+    
 }
 
-.mm-scrim {
+/* .mm-scrim{
     position: fixed;
     inset: 0;
     background: rgba(8, 14, 38, 0.35);
+} */
+.mm.is-open {
+    display: block;
+    top: 192px;
+    transition: 0.5s ease-in;
 }
 
 .mm-sheet {
     position: absolute;
     inset: 0;
-    background: var(--white-color);
+    /* background: var(--white-color); */
     overflow: hidden;
     display: block;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
@@ -77,6 +85,10 @@ body {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
     z-index: 2;
     cursor: pointer;
+}
+
+.mm-panel header{
+    background-color: transparent;
 }
 
 .mm-panel {

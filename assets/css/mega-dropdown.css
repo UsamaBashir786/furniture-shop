@@ -182,3 +182,22 @@
         height: 150px;
     }
 }
+.mega-item{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+}
+.mega-item a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 0;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+}
+.mega-item a:hover::after{
+    width: 100%;
+}
+
+
