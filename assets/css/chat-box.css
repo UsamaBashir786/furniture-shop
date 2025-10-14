@@ -10,24 +10,24 @@
     gap: 8px;
     bottom: 16px;
     z-index: 9999;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    box-shadow:
+        0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
     height: 55.2px;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid rgb(132, 184, 224);
-    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica,
+        Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
     right: 2rem;
     padding: 1rem 26px;
     color: rgb(30, 48, 110);
     fill: rgb(30, 48, 110);
     stroke: rgb(30, 48, 110);
-
-
-    
 }
-.chat-box:hover svg{
+.chat-box:hover svg {
     fill: var(--background-color-2);
-} 
+}
 .chat-box:hover {
     background-color: var(--primary-dark) !important;
     border: 2px solid var(--background-color-2);

@@ -2,10 +2,10 @@
     --primary-color: #1e306e;
     --primary-dark: #26417f;
     --primary-text: #012169;
-    --button-background-primary:rgb(1 33 105);
+    --button-background-primary: rgb(1 33 105);
     --sale-color: #cb372a;
-    --black-color:#000;
-    --sale-hover:#df847c;
+    --black-color: #000;
+    --sale-hover: #df847c;
     --white-color: #ffffff;
     --background-color: #eef1f7;
     --background-color-2: rgb(132, 184, 224);
@@ -16,8 +16,6 @@
     --hover-primary-color: #15264c9a;
     --hover-sale-color: #dd7c7384;
 
-
-
     --font-primary: "CalibreWeb", sans-serif;
     --font-secondary: "NewKansas", sans-serif;
     --font-tertiary: "SuisseIntl", sans-serif;
@@ -25,52 +23,44 @@
     --font-calibregular: "Calibregular", sans-serif;
     --font-newkansasregular: "NewKansasRegular", sans-serif;
 
-
-
     --text-h0: 4.5rem;
     --text-h1: 3.5rem;
     --text-h2: 2.75rem;
     --text-h3: 2rem;
     --text-h4: 1.75rem;
     --text-h5: 1.375rem;
-    --text-h6: 1.25rem; 
-    --text-xs:0.875rem;
+    --text-h6: 1.25rem;
+    --text-xs: 0.875rem;
 
-    --spacing-0-5:0.125rem;
-    --spacing-1:0.25rem;
-    --spacing-2:0.5rem;
-    --spacing-3:0.75rem;
-    --spacing-4:1rem;
-    --spacing-5:1.25rem;
-    --spacing-6:1.5rem;
-    --spacing-8:2rem;
-    --spacing-1-5:0.375rem;
-    --spacing-10:2.5rem;
-    --spacing-24:6rem;
+    --spacing-0-5: 0.125rem;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-1-5: 0.375rem;
+    --spacing-10: 2.5rem;
+    --spacing-24: 6rem;
 
+    --header-link-list-spacing: 2rem;
+    --header-icon-list-spacing: 1.25rem;
+    --heading-letter-spacing: -0.01em;
+    --heading-text-transform: normal;
+    --spacing-2-5: 0.625rem;
 
+    --size: 1rem;
+    --rounded-full: 9999px;
+    --rounded-lg: 1.5rem;
 
-    --header-link-list-spacing:2rem;
-    --header-icon-list-spacing:1.25rem;
-    --heading-letter-spacing:-0.01em;
-    --heading-text-transform:normal;
-    --spacing-2-5:0.625rem;
+    --container-gutter: 1.25rem;
 
-    --size:1rem;
-    --rounded-full:9999px;
-    --rounded-lg:1.5rem;
+    --gap-3: 0.75rem;
 
-
-    --container-gutter:1.25rem;
-
-
-    --gap-3:0.75rem;
-    
-    --footer-font-size:18px;
-    --footer-copyright-font-size:16px;
+    --footer-font-size: 18px;
+    --footer-copyright-font-size: 16px;
     --footer-block-list-gap: var(--spacing-10) var(--spacing-24);
-    --footer-part-gap:4rem;
-    --footer-block-gap:1.5rem;
-
+    --footer-part-gap: 4rem;
+    --footer-block-gap: 1.5rem;
 }
-
