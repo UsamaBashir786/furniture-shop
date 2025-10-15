@@ -1,4 +1,5 @@
 const searchsidebar = document.querySelector(".search-sidebar");
+const sideoverlay = document.querySelector(".search-sidebar-overlay");
 const closebtn = document.getElementById("close-btn");
 const searchbtndesktop = document.getElementById("search-btn");
 const searchbtnmobile = document.getElementById("search-btn-mobile");
@@ -8,12 +9,19 @@ function opensearchsidebar() {
         searchsidebar.classList.add("activeSearch");
         document.body.style.overflow = "hidden";
     }
+    if (sideoverlay) {
+        sideoverlay.classList.add("overlayActive");
+        document.body.style.overflow = "hidden";
+    }
 }
 
 function closesearchsidebar() {
     if (searchsidebar) {
         searchsidebar.classList.remove("activeSearch");
         document.body.style.overflow = "";
+    }
+    if(searchsidebar){
+        sideoverlay.classList.remove("overlayActive")
     }
 }
 
